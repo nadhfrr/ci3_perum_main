@@ -187,8 +187,8 @@
 
                 <div class="row">
                     <div class="col-lg-12 text-center text-lg-center">
-                        <h2>Tertarik untuk Membeli Rumah Hunian Bersubsidi ini?</h2>
-                        <h3>Cepat Pesan Sebelum Kehabisan!</h3>
+                        <h2>Jangan lewatkan kesempatan ini</h2>
+                        <h3>Hubungi kami sekarang untuk informasi lebih lanjut</h3>
                         <a class="cta-btn align-middle" href="#contact">Kontak Kami</a>
                     </div>
                 </div>
@@ -230,10 +230,12 @@
                                     </ul>
 
                                     <a href="blog-details.html">
-                                        <h3>Rumah Contoh Tipe 45</h3>
+                                        <h3>Rumah Contoh Tipe Emerald (Tipe 45/84)</h3>
                                     </a>
 
-                                    <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84.</p>
+                                    <p>Jika Anda mencari hunian yang lebih luas, tipe rumah ini adalah pilihan yang tepat. 
+                                        Dengan luas tanah 84 meter persegi dan luas bangunan 84 meter persegi, 
+                                        Anda akan memiliki ruang yang lebih lega untuk keluarga Anda berkumpul dan beraktivitas.</p>
 
                                     <a href="blog-details.html" class="read-more">
                                         Lihat Selengkapnya
@@ -294,10 +296,11 @@
                                     </ul>
 
                                     <a href="blog-details.html">
-                                        <h3>Tipe 36</h3>
+                                        <h3>Rumah Contoh Tipe Ruby (Tipe 36/72)</h3>
                                     </a>
 
-                                    <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72.</p>
+                                    <p>Tipe rumah ini memberikan ruang yang lebih luas dengan luas tanah 72 meter persegi dan luas bangunan 36 meter persegi. 
+                                        Rumah ini cocok bagi Anda yang menginginkan hunian yang lebih besar dengan tata letak yang terencana dengan baik.</p>
 
                                     <a href="blog-details.html" class="read-more">
                                         Lihat Selengkapnya
@@ -390,7 +393,7 @@
                     Kec. Kedamean, Kabupaten Gresik,
                     Jawa Timur 61175</p> -->
                 <div class="copyright">
-                    <strong><span>Copyright &copy; PAUD Sri Rejeki <?= date('Y'); ?></span></strong>. All Rights Reserved
+                    <strong><span>Copyright &copy; Perumahan De' Diamond Park <?= date('Y'); ?></span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer><!-- End Footer -->
