@@ -8,7 +8,6 @@ class Proyek_model extends CI_Model
     public $nama_proyek;
     public $type;
     public $pemilik_proyek;
-    public $keterangan_lain;
 
     public function rules()
     {
@@ -35,12 +34,6 @@ class Proyek_model extends CI_Model
                 'field' => 'pemilik_proyek',
                 'label' => 'pemilik_proyek',
                 'rules' => 'required'
-            ],
-
-            [
-                'field' => 'keterangan_lain',
-                'label' => 'keterangan_lain',
-                'rules' => 'required'
             ]
         ];
     }
@@ -62,7 +55,6 @@ class Proyek_model extends CI_Model
         $this->nama_proyek = $post["nama_proyek"];
         $this->type = $post["type"];
         $this->pemilik_proyek = $post["pemilik_proyek"];
-        $this->keterangan_lain = $post["keterangan_lain"];
         $this->db->insert($this->_table, $this);
     }
 
@@ -78,7 +70,6 @@ class Proyek_model extends CI_Model
         $this->nama_proyek = $post["nama_proyek"];
         $this->type = $post["type"];
         $this->pemilik_proyek = $post["pemilik_proyek"];
-        $this->keterangan_lain = $post["keterangan_lain"];
 
         $this->db->update($this->_table, $this, array('kd_proyek' => $post['kd_proyek']));
     }

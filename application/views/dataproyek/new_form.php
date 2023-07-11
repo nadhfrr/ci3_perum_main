@@ -7,7 +7,7 @@
 
 	<div class="row">
 		<div class="col-lg">
-			<?= form_error('pengguna', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+			<?= form_error('dataproyek', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
 			<?= $this->session->flashdata('message'); ?>
 
@@ -53,14 +53,6 @@
 							<input class="form-control <?php echo form_error('pemilik_proyek') ? 'is-invalid' : '' ?>" type="text" name="pemilik_proyek" placeholder="Pemilik Proyek" />
 							<div class="invalid-feedback">
 								<?php echo form_error('pemilik_proyek') ?>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="keterangan_lain">Keterangan Lain</label>
-							<input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" placeholder="Keterangan Lain" />
-							<div class="invalid-feedback">
-								<?php echo form_error('keterangan_lain') ?>
 							</div>
 						</div>
 
