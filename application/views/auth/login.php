@@ -72,7 +72,7 @@
                                                         <span class="bigger-110">Masuk</span>
                                                     </button>
                                                     <div class="text">
-                                                        <a class="small" href="<?= base_url('beranda/index'); ?>">Kembali ke Beranda</a>
+                                                        <a class="small" href="<?= base_url('home'); ?>">Kembali ke Beranda</a>
                                                     </div>
                                                 </div>
 

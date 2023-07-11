@@ -15,6 +15,7 @@ class Laporan extends CI_Controller
     {
         $data['title'] = 'Daftar Pengeluaran RAB';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data["proyek"] = $this->Proyek_model->getById($kd_proyek);
         // $data['getidrab'] = $this->Proyek_model->groupbyidrab()->result_array();
         // $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin('001');
 
@@ -51,10 +52,10 @@ class Laporan extends CI_Controller
         $data['totalrab13'] = $this->Proyek_model->getpekerjaantotal($kd_proyek, '0013')->row_array();
         $data['totalrab14'] = $this->Proyek_model->getpekerjaantotal($kd_proyek, '0014')->row_array();
 
+        $data['totalall'] = $this->Proyek_model->getpekerjaantotalpr($kd_proyek)->row_array();
 
         $data['totalraball'] = $this->Proyek_model->getpekerjaantotalall()->row_array();
-
-
+        $data['kd_proyek'] = $kd_proyek;
 
         // dead($data['totalrab1']);
         $this->load->view('templates/header', $data);

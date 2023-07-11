@@ -48,8 +48,10 @@ class Detailpekerjaan_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->id_pekerjaan = $post["id_pekerjaan"];
+        $this->id_rab = $post["id_rab"];
         $this->nama_pekerjaan = $post["nama_pekerjaan"];
+        $this->satuan = $post["satuan"];
+        $this->harga_satuan = $post["harga_satuan"];
 
         $this->db->insert($this->_table, $this);
     }
@@ -78,7 +80,8 @@ class Detailpekerjaan_model extends CI_Model
         $this->db->where('kd_proyek', $kd_proyek);
         $this->db->where('id_pekerjaan', $id_pekerjaan);
         $this->db->update('pekerjaan', $data);
-        redirect('detailpekerjaan/index/' . $kd_proyek . '/' . $id_rab . '');
+        // redirect('detailpekerjaan/index/' . $kd_proyek . '/' . $id_rab . '');
+        redirect('manpro/detailpekerjaan/' . $kd_proyek . '/' . $id_rab . '');
     }
 
     public function delete($id)

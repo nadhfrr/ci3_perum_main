@@ -22,13 +22,6 @@ function is_logged_in()
         }
     }
 }
-function dead($data)
-{
-    echo '<pre class="-debug">';
-    print_r($data);
-    echo '</pre>' . "\n";
-    die();
-}
 
 function check_access($role_id, $menu_id)
 {
@@ -61,5 +54,12 @@ if (!function_exists('format_indo')) {
         $result = $tgl . " " . $Bulan[(int)$bulan - 1] . " " . $tahun . " " . $waktu;
 
         return $result;
+    }
+    function dead($data)
+    {
+        echo '<pre class="-debug">';
+        print_r($data);
+        echo '</pre>' . "\n";
+        die();
     }
 }

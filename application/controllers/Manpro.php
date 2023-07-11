@@ -88,7 +88,7 @@ class Manpro extends CI_Controller
         }
     }
 
-    public function add()
+    public function addpekerjaan()
     {
         $data['title'] = 'Tambah Jenis Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -105,13 +105,34 @@ class Manpro extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('manpro/new_form', $data);
+        $this->load->view('manpro/detailrab/new_form', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function add()
+    {
+        $data['title'] = 'Tambah Pekerjaan';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $detailpekerjaan = $this->detailpekerjaan_model;
+        $validation = $this->form_validation;
+        $validation->set_rules($detailpekerjaan->rules());
+
+        if ($validation->run() == false) {
+        } else {
+            $detailpekerjaan->save();
+            $this->session->set_flashdata('success', 'Berhasil disimpan');
+        }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('manpro/detailpekerjaan/new_form', $data);
         $this->load->view('templates/footer');
     }
 
     public function edit($kd_proyek = null, $id_pekerjaan = null)
     {
-        if (!isset($id_pekerjaan)) redirect('detailpekerjaan');
+        if (!isset($id_pekerjaan)) redirect('manpro/detailpekerjaan');
 
         $data['title'] = 'Edit Volume Rincian Detail Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -132,7 +153,7 @@ class Manpro extends CI_Controller
         } else {
             $detailpekerjaan->update();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
-            // redirect('detailpekerjaan');
+            // redirect('manpro/detailpekerjaan');
         }
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);

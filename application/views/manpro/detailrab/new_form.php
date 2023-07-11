@@ -19,14 +19,21 @@
 
 			<div class="card mb-3">
 				<div class="card-header">
-					<a href="<?php echo site_url('manpro/detailrab') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+					<a href="<?php echo site_url('manpro/detailrab/' . $kd_proyek . '') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 				</div>
 				<div class="card-body">
 
-					<form action="<?php base_url('manpro/add') ?>" method="post" enctype="multipart/form-data">
+					<form class="user" method="post" enctype="multipart/form-data">
+						<div class="form-group">
+							<label for="id_rab">ID RAB</label>
+							<input class="form-control <?php echo form_error('id_rab') ? 'is-invalid' : '' ?>" type="text" name="id_rab" />
+							<div class="invalid-feedback">
+								<?php echo form_error('id_rab') ?>
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="nama_rab">Jenis Pekerjaan</label>
-							<input class="form-control <?php echo form_error('nama_rab') ? 'is-invalid' : '' ?>" type="text" name="nama_rab" placeholder="Kode Bahan" />
+							<input class="form-control <?php echo form_error('nama_rab') ? 'is-invalid' : '' ?>" type="text" name="nama_rab" />
 							<div class="invalid-feedback">
 								<?php echo form_error('nama_rab') ?>
 							</div>
@@ -38,7 +45,7 @@
 				</div>
 
 				<div class="card-footer small text-muted">
-					* Wajib diisi
+					*Wajib diisi
 				</div>
 
 

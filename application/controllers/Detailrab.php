@@ -8,6 +8,7 @@ class Detailrab extends CI_Controller
     {
         parent::__construct();
         $this->load->model("detailrab_model");
+        $this->load->model("detailpekerjaan_model");
         $this->load->library('form_validation');
         $this->load->model("proyek_model");
     }
@@ -103,7 +104,7 @@ class Detailrab extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('manpro/detailrab/new_form', $data);
+        $this->load->view('detailrab/new_form', $data);
         $this->load->view('templates/footer');
     }
 

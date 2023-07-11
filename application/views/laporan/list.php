@@ -54,7 +54,7 @@
                                             ?>
                                         </td>
                                         <td width="300">
-                                            <a href="<?php echo site_url('keuangan/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
+                                            <a href="<?php echo site_url('laporan/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
                                                 Detail
                                             </a>
                                         </td>

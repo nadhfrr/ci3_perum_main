@@ -60,7 +60,7 @@
 											<?= $proyek['ket_perbaikan']; ?>
 										</td>
 										<td width="300">
-											<a href="<?php echo site_url('detailrab/indexrab/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+											<a href="<?php echo site_url('manpro/detailrab/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 											<a href="<?php echo site_url('dataproyek/edit/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
 											<a onclick="deleteConfirm('<?php echo site_url('dataproyek/delete/' . $proyek['kd_proyek']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>

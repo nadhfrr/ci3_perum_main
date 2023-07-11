@@ -7,22 +7,22 @@ class Detailrab_model extends CI_Model
     public $id_rab;
     public $nama_rab;
 
-    // public function rules()
-    // {
-    //     return [
-    //         [
-    //             'field' => 'id_rab',
-    //             'label' => 'id_rab',
-    //             'rules' => 'required'
-    //         ],
+    public function rules()
+    {
+        return [
+            [
+                'field' => 'id_rab',
+                'label' => 'id_rab',
+                'rules' => 'required'
+            ],
 
-    //         [
-    //             'field' => 'nama_rab',
-    //             'label' => 'nama_rab',
-    //             'rules' => 'required'
-    //         ],
-    //     ];
-    // }
+            [
+                'field' => 'nama_rab',
+                'label' => 'nama_rab',
+                'rules' => 'required'
+            ]
+        ];
+    }
 
     public function getAll()
     {

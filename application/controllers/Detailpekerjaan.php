@@ -8,6 +8,7 @@ class Detailpekerjaan extends CI_Controller
     {
         parent::__construct();
         $this->load->model("detailpekerjaan_model");
+        $this->load->model("detailrab_model");
         $this->load->library('form_validation');
     }
 
@@ -105,22 +106,22 @@ class Detailpekerjaan extends CI_Controller
 
     public function add()
     {
-        $data['title'] = 'Tambah Daftar Pengguna';
+        $data['title'] = 'Tambah Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $detailrab = $this->detailrab_model;
+        $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
-        $validation->set_rules($detailrab->rules());
+        $validation->set_rules($detailpekerjaan->rules());
 
         if ($validation->run() == false) {
         } else {
-            $detailrab->save();
+            $detailpekerjaan->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('detailrab/new_form', $data);
+        $this->load->view('detailpekerjaan/new_form', $data);
         $this->load->view('templates/footer');
     }
 

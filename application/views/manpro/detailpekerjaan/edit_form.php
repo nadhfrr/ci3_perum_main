@@ -27,7 +27,7 @@
                 <div class="card-body">
 
                     <?php foreach ($detailpekerjaan as $dpk) : ?>
-                        <form action="<?php base_url("detailpekerjaan/edit") ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php base_url("manpro/edit") ?>" method="post" enctype="multipart/form-data">
 
                             <input type="hidden" name="id_pekerjaan" value="<?php echo $dpk['id_pekerjaan'] ?>" />
                             <input type="hidden" name="id_rab" value="<?php echo $dpk['id_rab'] ?>" />

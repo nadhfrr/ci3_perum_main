@@ -26,6 +26,7 @@
 									<th>Nama Proyek</th>
 									<th>Type</th>
 									<th>Pemilik Proyek</th>
+									<th>Keterangan Perbaikan</th>
 									<th>Aksi</th>
 								</tr>
 							</thead>
@@ -44,8 +45,11 @@
 										<td width="200">
 											<?= $proyek['pemilik_proyek']; ?>
 										</td>
+										<td width="200">
+											<?= $proyek['ket_perbaikan']; ?>
+										</td>
 										<td width="300">
-											<a href="<?php echo site_url('detailrab/index/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
+											<a href="<?php echo site_url('proyek/detailrab/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i> Detail</a>
 											<a href="<?php echo site_url('proyek/edit/' . $proyek['kd_proyek']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
 											<a onclick="deleteConfirm('<?php echo site_url('proyek/delete/' . $proyek['kd_proyek']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>

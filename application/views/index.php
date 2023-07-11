@@ -1,450 +1,417 @@
-<!doctype html>
-<html lang="zxx">
-
-<!-- Mirrored from templates.envytheme.com/vidnext/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Dec 2020 14:59:47 GMT -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/bootstrap.min.css">
-    <!-- Owl Theme Default CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/owl.theme.default.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/owl.carousel.min.css">
-    <!-- Owl Magnific CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/magnific-popup.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/animate.css">
-    <!-- Boxicons CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/boxicons.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/flaticon.css">
-    <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/meanmenu.css">
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/nice-select.css">
-    <!-- Odometer CSS-->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/odometer.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="<?= base_url('front-end/'); ?>assets/css/responsive.css">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="<?= base_url('front-end/'); ?>assets/img/logo-perum.png">
-    <!-- Title -->
     <title>De' Diamond Park</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
+    <!-- Favicons -->
+    <link href="<?= base_url('front-end/assets/img/logo-perum.png') ?>" rel="icon">
+    <link href="<?= base_url('front-end/assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="<?= base_url('front-end/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i') ?>" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="<?= base_url('front-end/assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('front-end/assets/vendor/icofont/icofont.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('front-end/assets/vendor/boxicons/css/boxicons.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('front-end/assets/vendor/animate.css/animate.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('front-end/assets/vendor/owl.carousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('front-end/assets/vendor/venobox/venobox.css') ?>" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="<?= base_url('front-end/assets/css/style.css') ?>" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Green - v2.3.1
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!-- Start Preloader Area -->
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <!-- End Preloader Area -->
 
-    <!-- Start Navbar Area -->
-    <div class="navbar-area">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="#" class="logo">
-                <h5>DE' DIAMOND PARK</h5>
+    <!-- ======= Top Bar ======= -->
+    <!-- <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+        <div class="container d-flex">
+            <div class="contact-info mr-auto">
+                <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="icofont-phone"></i> +1 5589 55488 55
+            </div>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="skype"><i class="icofont-skype"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo mr-auto"><a href=""><img src="<?= base_url('front-end/assets/img/logo-perum.png') ?>">De' Diamond Park</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#hero">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#portfolio">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="<?= base_url('auth'); ?>">Masuk</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+
+            <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/1.jpg" style="width:1550px;height:800px">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
+                            <p class="animate__animated animate__fadeInUp">Perumahan Bersubsidi dan Komersil</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/1.jpg" style="width:1550px;height:800px">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
+                            <p class="animate__animated animate__fadeInUp">Hunian Asri Kawasan Berseri</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/2.jpg" style="width:1550px;height:800px">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h1 class="animate__animated animate__fadeInDown">GERBANG PERUMAHAN DE' DIAMOND PARK</h1>
+                            <p class="animate__animated animate__fadeInUp">Perumahan Bersubsidi dan Komersil</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
         </div>
+    </section><!-- End Hero -->
 
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">
-                        <h3>DE' DIAMOND PARK</h3>
-                        <!-- <img src="assets/img/logo.png" alt="Logo"> -->
-                    </a>
+    <main id="main">
 
-                    <div class="collapse navbar-collapse mean-menu">
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active">Beranda</a>
-                            </li>
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
 
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link active">Tentang Kami</a>
-                            </li>
+                <div class="section-title">
+                    <h2>Tentang Kami</h2>
+                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+                </div>
 
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Kontak</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="<?= base_url('auth'); ?>" class="get-started-btn scrollto">Masuk</a>
-                            </li>
-                        </ul>
-
+                <div class="row content">
+                    <div class="col-lg-8" data-aos="fade-right">
+                        <!-- <span>Tentang Kami</span> -->
+                        <!-- <img src="<?php echo base_url() ?>front-end/assets/img/logo-paud.png"> -->
+                        <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
+                        <!-- <h3>Mendidik anak menjadi generasi sholeh, sholihah, terampil, kreatif dan inovatif</h3> -->
+                        <p>
+                            PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif
+                            dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
+                            de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.
+                        </p>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- End Navbar Area -->
-
-    <!-- Start Hero Slider Area -->
-    <section class="hero-slider-area">
-        <div class="hero-slider-wrap owl-theme owl-carousel" data-slider-id="1">
-            <div class="hero-slider-item bg-1">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="hero-slider-text one">
-                                <h1>DE' DIAMOND PARK</h1>
-                                <p>Perumahan bersubsidi dan Komersil</p>
-
-                                <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
-                                        Lihat Selengkapnya
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left">
+                        <img src="<?php echo base_url() ?>front-end/assets/img/tentang-kami.jpg" style="height:522px">
                     </div>
                 </div>
+
             </div>
+        </section><!-- End About Us Section -->
 
-            <div class="hero-slider-item bg-2">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="hero-slider-text two">
-                                <h1>De' Diamond Park </h1>
-                                <p><b>Hunian Asri Kawasan Berseri</b></p>
+        <!-- ======= Video Section ======= -->
+        <section id="video" class="video">
+            <div class="container">
 
-                                <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
-                                        Lihat Selengkapnya
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-slider-item bg-3">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="hero-slider-text three">
-                                <h1>Gerbang Perumahan De' Diamond Park</h1>
-                                <p><b>Perumahan bersubsidi dan Komersil</b></p>
-
-                                <div class="slider-btn">
-                                    <a href="#about" class="default-btn">
-                                        Lihat Selengkapnya
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Start Carousel Thumbs -->
-        <div class="thumbs-wrap">
-            <div class="owl-thumbs hero-slider-thumb" data-slider-id="1">
-                <div class="owl-thumb-item">
-                    <span>01</span>
-                </div>
-
-                <div class="owl-thumb-item">
-                    <span>02</span>
-                </div>
-
-                <div class="owl-thumb-item">
-                    <span>03</span>
-                </div>
-            </div>
-        </div>
-        <!-- End Social Wrap -->
-    </section>
-    <!-- End Hero Slide Area -->
-
-    <!-- Start About Area -->
-    <section class="about-area ptb-100">
-        <div class="container">
-            <div class="about-content-wrap">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="about-content">
-                            <span>Tentang Kami</span>
-                            <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
-                            <p>PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif
-                                dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
-                                de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.</p>
-
-                            <a href="#about" class="default-btn">
-                                Lihat Selengkapnya
-                            </a>
-                        </div>
+                    <div class="col-lg-8 text-center text-lg-center">
+                        <iframe width="700" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed/r9hf2T-AKhw" allowfullscreen></iframe>
                     </div>
-
                     <div class="col-lg-4">
-                        <div class="about-img">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/tentang-kami.jpg" alt="Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Area -->
-
-    <!-- Start Video Created Area -->
-    <section class="video-created-area ptb-100">
-        <div class="container">
-            <div class="video-created-wrap">
-                <img src="<?= base_url('front-end/'); ?>assets/img/video-bg.jpg" alt="Image">
-
-                <div class="video-wrap">
-                    <a href="https://www.youtube.com/watch?v=r9hf2T-AKhw" class="popup-youtube">
-                        <i class="flaticon-play"></i>
-                    </a>
-                </div>
-
-                <h2>Video di Buat oleh PT. KIKA</h2>
-            </div>
-        </div>
-    </section>
-    <!-- End Video Created Area -->
-
-    <!-- Start Get In Touch Area -->
-    <section class="get-in-touch-area ptb-100">
-        <div class="container">
-            <div class="get-in-touch-content">
-                <h2>Tertarik untuk Membeli Rumah Hunian Bersubsidi ini?</h2>
-                <h3>Cepat Pesan Sebelum Kehabisan!</h3>
-
-                <a href="contact.html" class="default-btn">
-                    Kontak Kami
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- End Get In Touch Area -->
-
-    <!-- Start Blog Area -->
-    <section class="blog-area pt-100 pb-70">
-        <div class="container">
-            <div class="section-title">
-                <span class="top-title">Galeri</span>
-                <h2>Informasi Terakhir</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog">
-                        <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/45 dp render 4.jpg" alt="Image">
-                        </a>
-
-                        <div class="blog-content">
-                            <ul>
-                                <li>
-                                    <i class="flaticon-user"></i>
-                                    <a href="#">Admin</a>
-                                </li>
-
-                                <li>
-                                    <i class="flaticon-calendar"></i>
-                                    23/12/2021
-                                </li>
-                            </ul>
-
-                            <a href="blog-details.html">
-                                <h3>Rumah Contoh Tipe 45</h3>
-                            </a>
-
-                            <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84.</p>
-
-                            <a href="blog-details.html" class="read-more">
-                                Lihat Selengkapnya
-                            </a>
-                        </div>
+                        <h3>VIDEO DI BUAT</h3>
+                        <h3>OLEH PT. KIKA</h3>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog">
-                        <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/gerbang.jpg" alt="Image">
-                        </a>
-
-                        <div class="blog-content">
-                            <ul>
-                                <li>
-                                    <i class="flaticon-user"></i>
-                                    <a href="#">Admin</a>
-                                </li>
-
-                                <li>
-                                    <i class="flaticon-calendar"></i>
-                                    20/12/2021
-                                </li>
-                            </ul>
-
-                            <a href="blog-details.html">
-                                <h3>Pintu Masuk Menuju Perumahan de' Diamond Park</h3>
-                            </a>
-
-                            <p>Lokasi strategis, terdekat dengan lembaga pendidikan dan puskesmas.</p>
-
-                            <a href="blog-details.html" class="read-more">
-                                Lihat Selengkapnya
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                    <div class="single-blog">
-                        <a href="blog-details.html">
-                            <img src="<?= base_url('front-end/'); ?>assets/img/blog/progres pembangunan.jpg" alt="Image">
-                        </a>
-
-                        <div class="blog-content">
-                            <ul>
-                                <li>
-                                    <i class="flaticon-user"></i>
-                                    <a href="#">Admin</a>
-                                </li>
-
-                                <li>
-                                    <i class="flaticon-calendar"></i>
-                                    03/09/2018
-                                </li>
-                            </ul>
-
-                            <a href="blog-details.html">
-                                <h3>Tipe 36</h3>
-                            </a>
-
-                            <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72.</p>
-
-                            <a href="blog-details.html" class="read-more">
-                                Lihat Selengkapnya
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- End Blog Area -->
+        </section><!-- End Cta Section -->
 
-    <!-- Start Footer Area -->
-    <footer class="footer-top-area pt-100 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-widget">
-                        <img src="<?= base_url('front-end/assets/img/logo-perum.png'); ?>">
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center text-lg-center">
+                        <h2>Tertarik untuk Membeli Rumah Hunian Bersubsidi ini?</h2>
+                        <h3>Cepat Pesan Sebelum Kehabisan!</h3>
+                        <a class="cta-btn align-middle" href="#contact">Kontak Kami</a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-widget">
-                        <h3>Kontak Kami</h3>
+            </div>
+        </section><!-- End Cta Section -->
 
-                        <ul class="address">
-                            <li>
-                                <i class="flaticon-pin"></i>
-                                Balongjerambah, Kedamean,
-                                Kec. Kedamean, Kabupaten Gresik,
-                                Jawa Timur 61175
-                            </li>
+        <!-- Start Blog Area -->
 
-                            <li>
-                                <i class="flaticon-email-1"></i>
-                                <a href="mailto:dediamondpark@kilauintankarunia.com">
-                                    dediamondpark@ kilauintankarunia.com
+        <!-- End Blog Area -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Galeri</h2>
+                        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog">
+                                <a href="blog-details.html">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/blog/45 dp render 4.jpg" alt="Image">
                                 </a>
-                            </li>
 
-                            <li>
-                                <i class="flaticon-phone-call"></i>
-                                <a href="tel:+6283890202336">
-                                    +6283890202336
+                                <div class="blog-content">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-user-o"></i>
+                                            <a href="#">Admin</a>
+                                        </li>
+
+                                        <li>
+                                            <i class="flaticon-calendar"></i>
+                                            23/12/2021
+                                        </li>
+                                    </ul>
+
+                                    <a href="blog-details.html">
+                                        <h3>Rumah Contoh Tipe 45</h3>
+                                    </a>
+
+                                    <p>Pembangunan progres rumah contoh tipe 45 dengan luas tanah 84.</p>
+
+                                    <a href="blog-details.html" class="read-more">
+                                        Lihat Selengkapnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog">
+                                <a href="blog-details.html">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/blog/gerbang.jpg" alt="Image">
                                 </a>
-                            </li>
-                        </ul>
+
+                                <div class="blog-content">
+                                    <ul>
+                                        <li>
+                                            <i class="flaticon-user"></i>
+                                            <a href="#">Admin</a>
+                                        </li>
+
+                                        <li>
+                                            <i class="flaticon-calendar"></i>
+                                            20/12/2021
+                                        </li>
+                                    </ul>
+
+                                    <a href="blog-details.html">
+                                        <h3>Pintu Masuk Menuju Perumahan de' Diamond Park</h3>
+                                    </a>
+
+                                    <p>Lokasi strategis, terdekat dengan lembaga pendidikan dan puskesmas.</p>
+
+                                    <a href="blog-details.html" class="read-more">
+                                        Lihat Selengkapnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                            <div class="single-blog">
+                                <a href="blog-details.html">
+                                    <img src="<?= base_url('front-end/'); ?>assets/img/blog/progres pembangunan.jpg" alt="Image">
+                                </a>
+
+                                <div class="blog-content">
+                                    <ul>
+                                        <li>
+                                            <i class="flaticon-user"></i>
+                                            <a href="#">Admin</a>
+                                        </li>
+
+                                        <li>
+                                            <i class="flaticon-calendar"></i>
+                                            03/09/2018
+                                        </li>
+                                    </ul>
+
+                                    <a href="blog-details.html">
+                                        <h3>Tipe 36</h3>
+                                    </a>
+
+                                    <p>Progres pembangunan pada rumah dengan tipe 36 dengan luas tanah 72.</p>
+
+                                    <a href="blog-details.html" class="read-more">
+                                        Lihat Selengkapnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </div>
-    </footer>
-    <!-- End Footer Area -->
+        </section><!-- End Portfolio Section -->
 
-    <!-- Start Footer Bottom Area -->
-    <footer class="footer-bottom-area pt-100 pb-70">
-        <div class="container">
-            <div class="copyright-wrap">
-                <p>Copyright @2021 Proyek</p>
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Kontak</h2>
+                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+                </div>
+
             </div>
-        </div>
-    </footer>
-    <!-- End Footer Bottom Area -->
+            <!-- Start Footer Area -->
+            <footer class="footer-top-area pt-100 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <img src="<?= base_url('front-end/assets/img/logo-perum.png'); ?>">
+                            </div>
+                        </div>
 
-    <!-- Start Go Top Area -->
-    <div class="go-top">
-        <i class='bx bx-chevrons-up'></i>
-        <i class='bx bx-chevrons-up'></i>
-    </div>
-    <!-- End Go Top Area -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>Kontak Kami</h3>
+
+                                <div class="address">
+                                    <li>
+                                        <i class="icofont-google-map"></i>
+                                        Balongjerambah, Kedamean,
+                                        Kec. Kedamean, Kabupaten Gresik,
+                                        Jawa Timur 61175
+                                    </li>
+
+                                    <li>
+                                        <i class="icofont-envelope"></i>
+                                        <a href="mailto:dediamondpark@kilauintankarunia.com">
+                                            dediamondpark@ kilauintankarunia.com
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <i class="icofont-phone"></i>
+                                        <a href="tel:+6283890202336">
+                                            +6283890202336
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h2>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.262469571367!2d112.51144501474558!3d-7.324388094714075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78079b68ad50f5%3A0x594a447648a44277!2sDE&#39;%20DIAMOND%20PARK%20KEDAMEAN!5e0!3m2!1sen!2sid!4v1640092449221!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer Area -->
+
+            <!-- Start Footer Bottom Area -->
+            <!-- <footer class="footer-bottom-area pt-100 pb-70">
+                <div class="container">
+                    <div class="copyright-wrap">
+                        <p>Copyright &copy; De' Diamond Park <?= date('Y'); ?>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer> -->
+            <!-- End Footer Bottom Area -->
+        </section><!-- End Contact Section -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="container">
+                <!-- <h3>DE' DIAMOND PARK</h3>
+                <p>Balongjerambah, Kedamean,
+                    Kec. Kedamean, Kabupaten Gresik,
+                    Jawa Timur 61175</p> -->
+                <div class="copyright">
+                    <strong><span>Copyright &copy; PAUD Sri Rejeki <?= date('Y'); ?></span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </footer><!-- End Footer -->
 
 
-    <!-- Jquery-3.5.1.Slim.Min.JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery-3.5.1.slim.min.js"></script>
-    <!-- Popper JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/bootstrap.min.js"></script>
-    <!-- Meanmenu JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.meanmenu.js"></script>
-    <!-- Wow JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/wow.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/owl.carousel.js"></script>
-    <!-- Carousel Thumbs JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/carousel-thumbs.js"></script>
-    <!-- Owl Magnific JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Nice Select JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.nice-select.min.js"></script>
-    <!-- Parallax JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/parallax.min.js"></script>
-    <!-- Mixitup JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.mixitup.min.js"></script>
-    <!-- Appear JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.appear.js"></script>
-    <!-- Odometer JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/odometer.min.js"></script>
-    <!-- Form Validator JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/form-validator.min.js"></script>
-    <!-- Contact JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/contact-form-script.js"></script>
-    <!-- Ajaxchimp JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/jquery.ajaxchimp.min.js"></script>
-    <!-- Custom JS -->
-    <script src="<?= base_url('front-end/'); ?>assets/js/custom.js"></script>
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="<?= base_url('front-end/assets/vendor/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/jquery.easing/jquery.easing.min.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/php-email-form/validate.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/owl.carousel/owl.carousel.min.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
+    <script src="<?= base_url('front-end/assets/vendor/venobox/venobox.min.js') ?>"></script>
+
+    <!-- Template Main JS File -->
+    <script src="<?= base_url('front-end/assets/js/main.js') ?>"></script>
+
 </body>
-
-<!-- Mirrored from templates.envytheme.com/vidnext/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Dec 2020 14:59:55 GMT -->
 
 </html>
