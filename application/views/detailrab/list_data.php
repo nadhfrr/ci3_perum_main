@@ -37,7 +37,7 @@
                                             <?php echo $detailrab['nama_rab'] ?>
                                         </td>
                                         <td>
-                                            <a href="<?= site_url('detailpekerjaan/indexdata/' . $detailrab['kd_proyek'] . '/' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
+                                            <a href="<?= site_url('detailpekerjaan/indexdata/' . $kd_proyek . '/' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
                                                 Detail</a>
                                         </td>
                                     </tr>
