@@ -17,13 +17,6 @@
                     <a href="<?php echo site_url('rancangan/proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
                 </div>
                 <div class="card-body">
-                    <h3> Rencana Anggaran Biaya ( RAB )</h3>
-                    <h4><b> Proyek : <?= $proyek->pemilik_proyek ?></b></h4>
-                    <h4><b> Lokasi : <?= $proyek->nama_proyek ?></b></h4>
-                    <h4><b> Type   : <?= $proyek->type ?></b></h4>
-                    <hr>
-<br>
-
                     <h5><b>I</b> Pekerjaan Pengukuran dan Pondasi</h5>
                     <div class="table-responsive">
                         <table class="table table-hover" id="" width="100%" cellspacing="0">

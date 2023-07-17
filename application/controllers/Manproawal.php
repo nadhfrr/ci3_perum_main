@@ -61,8 +61,6 @@ class Manpro extends CI_Controller
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
         // $proyek = $this->db->get('pekerjaan')->row_array();
         $data['kd_proyek'] = $kd_proyek;
-        $data['id_pekerjaan'] = $id_pekerjaan;
-        // dead($data["detailrab"]);
 
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($kd_proyek, $id_pekerjaan);
 
@@ -90,7 +88,7 @@ class Manpro extends CI_Controller
         }
     }
 
-    public function addpekerjaan($kd_proyek)
+    public function addpekerjaan()
     {
         $data['title'] = 'Tambah Jenis Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -98,7 +96,7 @@ class Manpro extends CI_Controller
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
-        $data['kd_proyek'] = $kd_proyek;
+
         if ($validation->run() == false) {
         } else {
             $detailrab->save();
@@ -111,18 +109,15 @@ class Manpro extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function add($kd_proyek, $id_pekerjaan)
+    public function add()
     {
         $data['title'] = 'Tambah Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        // $data['kd_proyek']
-        $data['kd_proyek'] = $kd_proyek;
-        $data['id_pekerjaan'] = $id_pekerjaan;
+
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
-        $data['pekerjaan'] = $this->db->query("select * from pekerjaan")->result();
-        // dead($data['pekerjaan']);
+
         if ($validation->run() == false) {
         } else {
             $detailpekerjaan->save();
@@ -168,27 +163,5 @@ class Manpro extends CI_Controller
 
         $data["detailpekerjaan"] = $detailpekerjaan->getById($id_pekerjaan);
         if (!$data["detailpekerjaan"]) show_404();
-    }
-    function getPekerjaan($id_pekerjaan)
-    {
-        $getdata = $this->db->query("select * from pekerjaan where id_pekerjaan = '$id_pekerjaan'")->row_array();
-        // dead($getdata);
-        echo json_encode($getdata);
-    }
-    function addPekerjaanByKdProyek($kd_proyek, $id_pekerjaan)
-    {
-        $data = [
-            'kd_proyek' => $kd_proyek,
-            'id_rab' => $id_pekerjaan,
-            'nama_pekerjaan' => $this->input->post("nama_pekerjaan"),
-            'volume' => 0,
-            'satuan' => $this->input->post("satuan"),
-            'harga_satuan' => str_replace(',', '',$this->input->post("harga_satuan")),
-
-            'keterangan_perbaikan' => $this->input->post("keterangan_perbaikan"),
-
-        ];
-        $this->db->insert('pekerjaan', $data);
-        redirect('manpro/detailpekerjaan/' . $kd_proyek . '/' . $id_pekerjaan . '');
     }
 }

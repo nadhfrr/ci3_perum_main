@@ -4,21 +4,20 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
-    <h5><b><?= $proyek->nama_proyek; ?> | <?= "Type : " . $proyek->type; ?> | <?= $proyek->pemilik_proyek; ?></h5></b>
+    <h5><b><?= $detailrab->nama_rab ?></b></h5>
 
     <div class="row">
         <div class="col-lg">
-            <?= form_error('detailrab', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+            <?= form_error('detailpekerjaan', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
             <?= $this->session->flashdata('message'); ?>
 
             <!-- DataTables -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <a href="<?php echo site_url('dataproyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('manpro/detailrab/' . $kd_proyek . '') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 
-                    <a href="<?php echo site_url('manpro/addpekerjaan/' . $kd_proyek . '') ?>" class="btn btn-primary" style="float:right"><i class="fas fa-plus"></i> Tambah Jenis Pekerjaan</a>
-
+                    <a href="<?php echo site_url('manpro/add') ?>" class="btn btn-primary" style="float:right"><i class="fas fa-plus"></i> Tambah Pekerjaan</a>
                 </div>
                 <div class="card-body">
 
@@ -26,27 +25,59 @@
                         <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>ID RAB</th>
-                                    <th>Jenis Pekerjaan</th>
+                                    <th>ID Pekerjaan</th>
+                                    <th>Nama Pekerjaan</th>
+                                    <th>Volume</th>
+                                    <th>Satuan</th>
+                                    <th>Harga Satuan</th>
+                                    <th>Jumlah Harga</th>
+                                    <th>Keterangan Perbaikan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($detailrab as $detailrab) : ?>
+                                <?php foreach ($detailpekerjaan as $dp) : ?>
+
                                     <tr>
                                         <td>
-                                            <?php echo $detailrab['id_rab'] ?>
+                                            <?php echo $dp->id_pekerjaan ?>
                                         </td>
                                         <td width="">
-                                            <?php echo $detailrab['nama_rab'] ?>
+                                            <?php echo $dp->nama_pekerjaan ?>
                                         </td>
                                         <td>
-                                            <a href="<?= site_url('manpro/detailpekerjaan/' . $kd_proyek . '/' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
-                                                Detail</a>
+                                            <?php echo $dp->volume ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->satuan ?>
+                                        </td>
+                                        <td>
+                                            Rp<?= number_format($dp->harga_satuan); ?>
+                                        </td>
+
+                                        <td>
+                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->keterangan_perbaikan ?>
+                                        </td>
+
+                                        <td>
+                                            <a href="<?php echo site_url('manpro/edit/' . $kd_proyek . '/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
                                         </td>
                                     </tr>
+
                                 <?php endforeach; ?>
+
                             </tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Rp. <?= number_format($total['totalall']) ?></td>
+                            </tr>
                         </table>
                     </div>
 

@@ -17,7 +17,7 @@
                 <div class="card-header">
                     <a href="<?php echo site_url('dataproyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 
-                    <a href="<?php echo site_url('manpro/addpekerjaan/' . $kd_proyek . '') ?>" class="btn btn-primary" style="float:right"><i class="fas fa-plus"></i> Tambah Jenis Pekerjaan</a>
+                    <a href="<?php echo site_url('manpro/addpekerjaan') ?>" class="btn btn-primary" style="float:right"><i class="fas fa-plus"></i> Tambah Jenis Pekerjaan</a>
 
                 </div>
                 <div class="card-body">
