@@ -59,7 +59,7 @@ class Rancangan extends CI_Controller
 
 
 
-        // dead($data['totalrab1']);
+        // dead($data['proyek']);
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);

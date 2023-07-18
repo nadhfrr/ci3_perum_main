@@ -74,7 +74,7 @@
 <!-- Demo scripts for this page-->
 <script src="<?= base_url('back-end/js/demo/datatables-demo.js'); ?>"></script>
 <script src="<?= base_url('back-end/js/demo/chart-area-demo.js'); ?>"></script>
-
+<script src="<?= base_url('assets/'); ?>vendor/bootstrap-select/dist/js/bootstrap-select.js"></script>
 <script>
   function deleteConfirm(url) {
     $('#btn-delete').attr('href', url);

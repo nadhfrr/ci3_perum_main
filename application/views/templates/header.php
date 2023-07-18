@@ -18,6 +18,7 @@
     <!-- Custom styles for this template-->
     <link href="<?= base_url('back-end/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Page level plugin CSS-->
+    <link rel="stylesheet" href="<?= base_url("assets/"); ?>vendor/bootstrap-select/dist/css/bootstrap-select.css">
     <link href="<?= base_url('back-end/vendor/datatables/dataTables.bootstrap4.css'); ?>" rel="stylesheet">
 </head>
 

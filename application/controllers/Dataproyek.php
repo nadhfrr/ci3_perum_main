@@ -69,6 +69,7 @@ class Dataproyek extends CI_Controller
 
     public function add()
     {
+
         $data['title'] = 'Tambah Daftar Proyek';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -78,8 +79,24 @@ class Dataproyek extends CI_Controller
 
         if ($validation->run() == false) {
         } else {
+            $getProyekDetail = $this->db->query("select * from proyek_detail")->result_array();
+            // dead(count($getProyekDetail));
+            foreach ($getProyekDetail as $gpd) {
+                // dead($gpd);
+                $data = [
+                    'kd_proyek' => $this->input->post("kd_proyek"),
+                    'id_rab' => $gpd['id_rab'],
+                    'nama_pekerjaan' => $gpd['nama_pekerjaan'],
+                    'volume' => $gpd['volume'],
+                    'satuan' => $gpd['satuan'],
+                    'harga_satuan' => $gpd['harga_satuan'],
+                ];
+                // dead($data);
+                $this->db->insert("pekerjaan", $data);
+            }
             $proyek->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
+            return redirect("dataproyek/add");
         }
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
