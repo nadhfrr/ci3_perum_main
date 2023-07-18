@@ -2,7 +2,7 @@
 
 class Pekerjaan_model extends CI_Model
 {
-    private $_table = "pekerjaan";
+    private $_table = "proyek_detail";
 
     public $id_pekerjaan;
     public $kd_proyek;
@@ -50,7 +50,7 @@ class Pekerjaan_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id_pekerjaan" => $id])->row();
+        return $this->db->get_where($this->_table, ["id" => $id])->row();
     }
 
     public function save()
@@ -71,7 +71,7 @@ class Pekerjaan_model extends CI_Model
     public function update()
     {
         $post = $this->input->post();
-        $this->id_pekerjaan = $post["id_pekerjaan"];
+        $this->id = $post["id"];
         $this->id_rab = $post["id_rab"];
         $this->nama_pekerjaan = $post["nama_pekerjaan"];
         $this->satuan = $post["satuan"];

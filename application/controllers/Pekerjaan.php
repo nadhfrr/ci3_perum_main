@@ -18,7 +18,7 @@ class Pekerjaan extends CI_Controller
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['pekerjaan'] = $this->db->get('pekerjaan')->result_array();
+        $data['pekerjaan'] = $this->db->get('proyek_detail')->result_array();
 
         $this->form_validation->set_rules('pekerjaan', 'Pekerjaan', 'required');
 
@@ -29,7 +29,7 @@ class Pekerjaan extends CI_Controller
             $this->load->view('pekerjaan/list', $data);
             $this->load->view('templates/footer');
         } else {
-            $this->db->insert('user', ['pekerjaan' => $this->input->post('pekerjaan')]);
+            $this->db->insert('user', ['proyek_detail' => $this->input->post('pekerjaan')]);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
             redirect('pekerjaan');
         }

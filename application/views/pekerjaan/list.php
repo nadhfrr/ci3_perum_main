@@ -46,8 +46,8 @@
 										</td>
 
 										<td width="250">
-											<a href="<?php echo site_url('pekerjaan/edit/' . $pk['id_pekerjaan']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit </a>
-											<a onclick="deleteConfirm('<?php echo site_url('pekerjaan/delete/' . $pk['id_pekerjaan']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
+											<a href="<?php echo site_url('pekerjaan/edit/' . $pk['id']) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit </a>
+											<a onclick="deleteConfirm('<?php echo site_url('pekerjaan/delete/' . $pk['id']) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
 										</td>
 									</tr>
 								<?php endforeach; ?>
