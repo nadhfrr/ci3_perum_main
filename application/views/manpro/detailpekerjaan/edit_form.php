@@ -4,6 +4,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <h5><b><?= $detailpekerjaan->nama_pekerjaan ?></b></h5>
 
     <div class="row">
         <div class="col-lg">
@@ -34,20 +35,13 @@
                             <input type="hidden" name="kd_proyek" value="<?php echo $dpk['kd_proyek'] ?>" />
                             <input type="hidden" name="nama_pekerjaan" value="<?php echo $dpk['nama_pekerjaan'] ?>" />
                             <input type="hidden" name="satuan" value="<?php echo $dpk['satuan'] ?>" />
+                            <input type="hidden" name="harga_satuan" value="<?php echo $dpk['harga_satuan'] ?>" />
 
                             <div class="form-group">
                                 <label for="volume">Volume</label>
                                 <input class="form-control <?php echo form_error('volume') ? 'is-invalid' : '' ?>" type="text" name="volume" placeholder="Keterangan Lain" value="<?php echo $dpk['volume'] ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('volume') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="harga_satuan">Harga satuan</label>
-                                <input class="form-control <?php echo form_error('harga_satuan') ? 'is-invalid' : '' ?>" type="text" name="harga_satuan" placeholder="Keterangan Lain" value="<?php echo $dpk['harga_satuan'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('harga_satuan') ?>
                                 </div>
                             </div>
 

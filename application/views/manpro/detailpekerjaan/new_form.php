@@ -7,6 +7,7 @@
 
 	<!-- Page Heading -->
 	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+	<h5><b><?= $detailrab->nama_rab ?></b></h5>
 
 	<div class="row">
 		<div class="col-lg">
@@ -27,7 +28,7 @@
 				<div class="card-body">
 
 					<form class="user" action="<?php echo site_url('manpro/addPekerjaanByKdProyek/' . $kd_proyek . '/' . $id_pekerjaan . '') ?>" method="post" enctype="multipart/form-data">
-					<input type="text" id="nama_pekerjaan" name="nama_pekerjaan" hidden>
+						<input type="text" id="nama_pekerjaan" name="nama_pekerjaan" hidden>
 						<div class="form-group">
 							<label for="id_rab">ID RAB</label>
 							<input class="form-control <?php echo form_error('id_rab') ? 'is-invalid' : '' ?>" type="text" id="id_rab" name="id_rab" readonly />
@@ -83,9 +84,6 @@
 </div>
 
 <script>
-
-
-
 	function getIdPekerjaan(idPekerjaan) {
 
 		$.ajax({

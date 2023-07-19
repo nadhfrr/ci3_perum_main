@@ -115,6 +115,7 @@ class Manpro extends CI_Controller
     {
         $data['title'] = 'Tambah Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data["detailrab"] = $this->detailrab_model->getById($id_pekerjaan);
         // $data['kd_proyek']
         $data['kd_proyek'] = $kd_proyek;
         $data['id_pekerjaan'] = $id_pekerjaan;
@@ -144,6 +145,7 @@ class Manpro extends CI_Controller
         // dead($kd_proyek);
         $where = array('kd_proyek' => $kd_proyek, 'id_pekerjaan' => $id_pekerjaan);
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
+        // $data["detailpekerjaan"] = $this->detailpekerjaan_model->getById($id_pekerjaan);
         $getidrab = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
         $data['getidrab'] = $getidrab[0]['id_rab'];
         $data['getkdproyek'] = $getidrab[0]['kd_proyek'];
@@ -183,7 +185,7 @@ class Manpro extends CI_Controller
             'nama_pekerjaan' => $this->input->post("nama_pekerjaan"),
             'volume' => 0,
             'satuan' => $this->input->post("satuan"),
-            'harga_satuan' => str_replace(',', '',$this->input->post("harga_satuan")),
+            'harga_satuan' => str_replace(',', '', $this->input->post("harga_satuan")),
 
             'keterangan_perbaikan' => $this->input->post("keterangan_perbaikan"),
 
