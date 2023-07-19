@@ -111,8 +111,8 @@
                 <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/2.jpg" style="width:1550px;height:800px">
                     <div class="carousel-container">
                         <div class="container">
-                            <h1 class="animate__animated animate__fadeInDown">GERBANG PERUMAHAN DE' DIAMOND PARK</h1>
-                            <p class="animate__animated animate__fadeInUp">Perumahan Bersubsidi dan Komersil</p>
+                            <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
+                            <p class="animate__animated animate__fadeInUp">Harga Mulai RP260 Juta</p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
                         </div>
                     </div>
@@ -219,12 +219,11 @@
                                 <div class="blog-content">
                                     <ul>
                                         <li>
-                                            <i class="fas fa-user-o"></i>
+                                        <i class="icofont-ui-user"></i>
                                             <a href="#">Admin</a>
                                         </li>
-
                                         <li>
-                                            <i class="flaticon-calendar"></i>
+                                        <i class="icofont-ui-calendar"></i>
                                             23/12/2021
                                         </li>
                                     </ul>
@@ -253,12 +252,12 @@
                                 <div class="blog-content">
                                     <ul>
                                         <li>
-                                            <i class="flaticon-user"></i>
+                                        <i class="icofont-ui-user"></i>
                                             <a href="#">Admin</a>
                                         </li>
 
                                         <li>
-                                            <i class="flaticon-calendar"></i>
+                                        <i class="icofont-ui-calendar"></i>
                                             20/12/2021
                                         </li>
                                     </ul>
@@ -285,12 +284,12 @@
                                 <div class="blog-content">
                                     <ul>
                                         <li>
-                                            <i class="flaticon-user"></i>
+                                        <i class="icofont-ui-user"></i>
                                             <a href="#">Admin</a>
                                         </li>
 
                                         <li>
-                                            <i class="flaticon-calendar"></i>
+                                        <i class="icofont-ui-calendar"></i>
                                             03/09/2018
                                         </li>
                                     </ul>
@@ -378,7 +377,7 @@
             <!-- <footer class="footer-bottom-area pt-100 pb-70">
                 <div class="container">
                     <div class="copyright-wrap">
-                        <p>Copyright &copy; De' Diamond Park <?= date('Y'); ?>. All Rights Reserved</p>
+                        <p>Copyright &copy; De' Diamond Park <?= date('Y'); ?>.</p>
                     </div>
                 </div>
             </footer> -->
@@ -393,7 +392,7 @@
                     Kec. Kedamean, Kabupaten Gresik,
                     Jawa Timur 61175</p> -->
                 <div class="copyright">
-                    <strong><span>Copyright &copy; Perumahan De' Diamond Park <?= date('Y'); ?></span></strong>. All Rights Reserved
+                    <strong><span>Copyright &copy; Perumahan De' Diamond Park <?= date('Y'); ?></span></strong>.
                 </div>
             </div>
         </footer><!-- End Footer -->
