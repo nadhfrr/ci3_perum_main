@@ -33,7 +33,6 @@
                                     <th>Satuan</th>
                                     <th>Harga Satuan</th>
                                     <th>Jumlah Harga</th>
-                                    <th>Aksi</th>
 
                                 </tr>
                             </thead>
@@ -59,10 +58,6 @@
 
                                         <td>
                                             Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
-
-                                        <td>
-                                            <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                         </td>
 
                                     </tr>
@@ -118,10 +113,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -172,10 +163,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
@@ -230,10 +217,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -284,10 +267,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
@@ -342,10 +321,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -396,10 +371,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
@@ -454,10 +425,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -508,10 +475,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
@@ -566,10 +529,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -620,10 +579,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
@@ -678,10 +633,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -734,10 +685,6 @@
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
                                             </td>
 
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
-                                            </td>
-
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -788,10 +735,6 @@
 
                                             <td>
                                                 Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                            </td>
-
-                                            <td>
-                                                <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                             </td>
 
                                         </tr>
