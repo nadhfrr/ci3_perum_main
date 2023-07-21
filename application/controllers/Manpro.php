@@ -170,6 +170,16 @@ class Manpro extends CI_Controller
         $data["detailpekerjaan"] = $detailpekerjaan->getById($id_pekerjaan);
         if (!$data["detailpekerjaan"]) show_404();
     }
+
+    public function delete($kd_proyek = null, $id_pekerjaan = null)
+    {
+        if (!isset($id_pekerjaan)) redirect('manpro/detailpekerjaan');
+
+        if ($this->detailpekerjaan_model->delete($id_pekerjaan)) {
+            // redirect(site_url('manpro/detailpekerjaan/' . $kd_proyek . '/' . $detailrab['id_rab']));
+        }
+    }
+
     function getPekerjaan($id_pekerjaan)
     {
         $getdata = $this->db->query("select * from pekerjaan where id_pekerjaan = '$id_pekerjaan'")->row_array();

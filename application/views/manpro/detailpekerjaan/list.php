@@ -63,7 +63,7 @@
 
                                         <td>
                                             <a href="<?php echo site_url('manpro/edit/' . $kd_proyek . '/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-                                            <a onclick="deleteConfirm('<?php echo site_url('rancangan/delete/' . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
+                                            <a onclick="deleteConfirm('<?php echo site_url('manpro/delete/' . $kd_proyek . $dp->id_pekerjaan) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                         </td>
                                     </tr>
                                     <?php $i++; ?>
