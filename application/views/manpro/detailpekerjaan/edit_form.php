@@ -4,7 +4,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
-    <h5><b><?= $detailpekerjaan->nama_pekerjaan ?></b></h5>
+    <!-- <h5><b><?= $detailpekerjaan->nama_pekerjaan ?></b></h5> -->
 
     <div class="row">
         <div class="col-lg">
@@ -39,7 +39,8 @@
 
                             <div class="form-group">
                                 <label for="volume">Volume</label>
-                                <input class="form-control <?php echo form_error('volume') ? 'is-invalid' : '' ?>" type="text" name="volume" placeholder="Keterangan Lain" value="<?php echo $dpk['volume'] ?>" />
+                                <input class="form-control <?php echo form_error('volume') ? 'is-invalid' : '' ?>" type="text" name="volume" 
+                                placeholder="Keterangan Lain" value="<?php echo $dpk['volume'] ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('volume') ?>
                                 </div>

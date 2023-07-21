@@ -94,7 +94,7 @@ class Manpro extends CI_Controller
     {
         $data['title'] = 'Tambah Jenis Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data["proyek"] = $this->proyek_model->getById($kd_proyek);
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
@@ -145,11 +145,10 @@ class Manpro extends CI_Controller
         // dead($kd_proyek);
         $where = array('kd_proyek' => $kd_proyek, 'id_pekerjaan' => $id_pekerjaan);
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
-        // $data["detailpekerjaan"] = $this->detailpekerjaan_model->getById($id_pekerjaan);
         $getidrab = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
         $data['getidrab'] = $getidrab[0]['id_rab'];
         $data['getkdproyek'] = $getidrab[0]['kd_proyek'];
-
+        // $data["detailpekerjaan"] = $this->detailpekerjaan_model->getById($id_pekerjaan);
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
