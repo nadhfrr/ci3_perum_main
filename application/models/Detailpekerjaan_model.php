@@ -88,6 +88,7 @@ class Detailpekerjaan_model extends CI_Model
     {
         return $this->db->delete($this->_table, array("id_pekerjaan" => $id));
     }
+
     public function gettotal($id_rab)
     {
         $query = $this->db->query("

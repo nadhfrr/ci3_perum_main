@@ -94,7 +94,7 @@ class Manpro extends CI_Controller
     {
         $data['title'] = 'Tambah Jenis Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data["proyek"] = $this->proyek_model->getById($kd_proyek);
+
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailrab->rules());
@@ -145,10 +145,11 @@ class Manpro extends CI_Controller
         // dead($kd_proyek);
         $where = array('kd_proyek' => $kd_proyek, 'id_pekerjaan' => $id_pekerjaan);
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
+        // $data["detailpekerjaan"] = $this->detailpekerjaan_model->getById($id_pekerjaan);
         $getidrab = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
         $data['getidrab'] = $getidrab[0]['id_rab'];
         $data['getkdproyek'] = $getidrab[0]['kd_proyek'];
-        // $data["detailpekerjaan"] = $this->detailpekerjaan_model->getById($id_pekerjaan);
+
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
@@ -170,16 +171,6 @@ class Manpro extends CI_Controller
         $data["detailpekerjaan"] = $detailpekerjaan->getById($id_pekerjaan);
         if (!$data["detailpekerjaan"]) show_404();
     }
-
-    public function delete($kd_proyek = null, $id_pekerjaan = null)
-    {
-        if (!isset($id_pekerjaan)) redirect('manpro/detailpekerjaan');
-
-        if ($this->detailpekerjaan_model->delete($id_pekerjaan)) {
-            // redirect(site_url('manpro/detailpekerjaan/' . $kd_proyek . '/' . $detailrab['id_rab']));
-        }
-    }
-
     function getPekerjaan($id_pekerjaan)
     {
         $getdata = $this->db->query("select * from pekerjaan where id_pekerjaan = '$id_pekerjaan'")->row_array();
@@ -201,5 +192,14 @@ class Manpro extends CI_Controller
         ];
         $this->db->insert('pekerjaan', $data);
         redirect('manpro/detailpekerjaan/' . $kd_proyek . '/' . $id_pekerjaan . '');
+    }
+
+    public function delete($id = null)
+    {
+        if (!isset($id)) show_404();
+
+        if ($this->detailpekerjaan_model->delete($id)) {
+            redirect(site_url('manpro/detailpekerjaan'));
+        }
     }
 }
