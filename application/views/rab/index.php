@@ -14,7 +14,7 @@
             <!-- DataTables -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <a href="<?php echo site_url('proyek/list_proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('rab/list_proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 
                     <button onclick="download()" class="btn btn-info" style="float:right"><i class="fa fa-download"></i> Cetak Laporan</button>
                 </div>
