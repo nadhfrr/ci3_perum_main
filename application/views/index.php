@@ -291,7 +291,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Portfolio Section -->
+        </section>
+        <!-- End Portfolio Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
@@ -352,30 +353,19 @@
                 </div>
             </footer>
             <!-- End Footer Area -->
-
-            <!-- Start Footer Bottom Area -->
-            <!-- <footer class="footer-bottom-area pt-100 pb-70">
-                <div class="container">
-                    <div class="copyright-wrap">
-                        <p>Copyright &copy; De' Diamond Park <?= date('Y'); ?>.</p>
-                    </div>
-                </div>
-            </footer> -->
             <!-- End Footer Bottom Area -->
-        </section><!-- End Contact Section -->
+        </section>
+        <!-- End Contact Section -->
 
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <div class="container">
-                <!-- <h3>DE' DIAMOND PARK</h3>
-                <p>Balongjerambah, Kedamean,
-                    Kec. Kedamean, Kabupaten Gresik,
-                    Jawa Timur 61175</p> -->
                 <div class="copyright">
                     <strong><span>Copyright &copy; Perumahan De' Diamond Park <?= date('Y'); ?></span></strong>.
                 </div>
             </div>
-        </footer><!-- End Footer -->
+        </footer>
+        <!-- End Footer -->
 
 
     </main><!-- End #main -->
