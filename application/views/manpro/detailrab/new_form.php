@@ -5,7 +5,7 @@
 	<!-- Page Heading -->
 	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 	<h5><b><?= $proyek->nama_proyek; ?> | <?= "Type : " . $proyek->type; ?> | <?= $proyek->pemilik_proyek; ?></h5></b>
-	
+
 	<div class="row">
 		<div class="col-lg">
 			<?= form_error('detailrab', '<div class="alert alert-danger" role="alert">', '</div>'); ?>

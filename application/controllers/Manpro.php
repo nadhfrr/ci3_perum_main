@@ -94,6 +94,7 @@ class Manpro extends CI_Controller
     {
         $data['title'] = 'Tambah Jenis Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data["proyek"] = $this->proyek_model->getById($kd_proyek);
 
         $detailrab = $this->detailrab_model;
         $validation = $this->form_validation;
@@ -153,7 +154,7 @@ class Manpro extends CI_Controller
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
-        // dead($detailpekerjaan);
+
         // var_dump($data['total']);
         // die;
         if ($validation->run() == false) {
@@ -169,14 +170,17 @@ class Manpro extends CI_Controller
         $this->load->view('templates/footer');
 
         $data["detailpekerjaan"] = $detailpekerjaan->getById($id_pekerjaan);
+        // dead($data["detailpekerjaan"]);
         if (!$data["detailpekerjaan"]) show_404();
     }
+
     function getPekerjaan($id_pekerjaan)
     {
         $getdata = $this->db->query("select * from pekerjaan where id_pekerjaan = '$id_pekerjaan'")->row_array();
         // dead($getdata);
         echo json_encode($getdata);
     }
+
     function addPekerjaanByKdProyek($kd_proyek, $id_pekerjaan)
     {
         $data = [
@@ -194,12 +198,11 @@ class Manpro extends CI_Controller
         redirect('manpro/detailpekerjaan/' . $kd_proyek . '/' . $id_pekerjaan . '');
     }
 
-    public function delete($id = null)
+    public function delete($id = null, $kd_proyek, $id_rab)
     {
-        if (!isset($id)) show_404();
+        $this->db->where('id_pekerjaan', $id);
+        $this->db->delete('pekerjaan');
 
-        if ($this->detailpekerjaan_model->delete($id)) {
-            redirect(site_url('manpro/detailpekerjaan'));
-        }
+        redirect(site_url('manpro/detailpekerjaan/' . $kd_proyek . '/' . $id_rab . ''));
     }
 }
