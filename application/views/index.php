@@ -37,23 +37,6 @@
 
 <body>
 
-    <!-- ======= Top Bar ======= -->
-    <!-- <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-        <div class="container d-flex">
-            <div class="contact-info mr-auto">
-                <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-                <i class="icofont-phone"></i> +1 5589 55488 55
-            </div>
-            <div class="social-links">
-                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-                <a href="#" class="skype"><i class="icofont-skype"></i></a>
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-            </div>
-        </div>
-    </div> -->
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
@@ -70,12 +53,14 @@
                     <li><a href="#contact">Kontak</a></li>
                     <li><a href="<?= base_url('auth'); ?>">Masuk</a></li>
                 </ul>
-            </nav><!-- .nav-menu -->
+            </nav>
+            <!-- .nav-menu -->
 
             <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
 
         </div>
-    </header><!-- End Header -->
+    </header>
+    <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -86,33 +71,33 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/1.jpg" style="width:1550px;height:800px">
+                <div class="carousel-item active"><img src="<?= base_url() ?>front-end/assets/img/slide/3.jpg" style="width:1550px;height:800px">
                     <div class="carousel-container">
                         <div class="container">
-                            <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
-                            <p class="animate__animated animate__fadeInUp">Perumahan Bersubsidi dan Komersil</p>
+                            <h1 class="animate__animated animate__fadeInDown" >DE' DIAMOND PARK</h1>
+                            <p class="animate__animated animate__fadeInUp" style="color:black;font-weight:bold">Perumahan Bersubsidi dan Komersil</p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/1.jpg" style="width:1550px;height:800px">
+                <div class="carousel-item"><img src="<?= base_url() ?>front-end/assets/img/slide/1.jpg" style="width:1550px;height:800px">
                     <div class="carousel-container">
                         <div class="container">
                             <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
-                            <p class="animate__animated animate__fadeInUp">Hunian Asri Kawasan Berseri</p>
+                            <p class="animate__animated animate__fadeInUp" style="color:black;font-weight:bold">Hunian Asri Kawasan Berseri</p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)"><img src="<?= base_url() ?>front-end/assets/img/slide/2.jpg" style="width:1550px;height:800px">
+                <div class="carousel-item"><img src="<?= base_url() ?>front-end/assets/img/slide/4.jpg" style="width:1550px;height:800px">
                     <div class="carousel-container">
                         <div class="container">
                             <h1 class="animate__animated animate__fadeInDown">DE' DIAMOND PARK</h1>
-                            <p class="animate__animated animate__fadeInUp">Harga Mulai RP260 Juta</p>
+                            <p class="animate__animated animate__fadeInUp" style="color:black;font-weight:bold">Harga Mulai RP260 Juta</p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lihat Selengkapnya</a>
                         </div>
                     </div>
@@ -131,7 +116,8 @@
             </a>
 
         </div>
-    </section><!-- End Hero -->
+    </section>
+    <!-- End Hero -->
 
     <main id="main">
 
@@ -141,19 +127,16 @@
 
                 <div class="section-title">
                     <h2>Tentang Kami</h2>
-                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
                 </div>
 
                 <div class="row content">
                     <div class="col-lg-8" data-aos="fade-right">
-                        <!-- <span>Tentang Kami</span> -->
-                        <!-- <img src="<?php echo base_url() ?>front-end/assets/img/logo-paud.png"> -->
                         <h2>PERUMAHAN SUBSIDI DENGAN KONSEP HUNIAN HARMONIS & TERPADU DI GRESIK</h2>
-                        <!-- <h3>Mendidik anak menjadi generasi sholeh, sholihah, terampil, kreatif dan inovatif</h3> -->
                         <p>
-                            PT. Kilau Intan Karunia ( KIKA ) mempersembahkan hunian eksklusif
-                            dengan sentuhan minimalis modern untuk kenyamanan anda dan keluarga. Dengan akses jalan yang mudah dijangkau menjadikan
-                            de' DIAMOND PARK menjadi kawasan potensial untuk investasi anda dimasa yang akan datang.
+                            Selamat datang di Perumahan De' Diamond Park, hunian yang nyaman dan minimalis. Dengan 4 tipe rumah yang siap dihuni,
+                            kami menawarkan pilihan yang sesuai dengan kebutuhan dan gaya hidup Anda. Yaitu, Tipe Sapphire(Tipe 30/60), Tipe Ruby(Tipe 36/72),
+                            Tipe Emerald(Tipe 45/84), dan Tipe Amethyst(Tipe 60/66). Dengan fasilitas dan akses terdekat yang menguntungkan. Perumahan
+                            De' Diamond Park adalah tempat yang ideal untuk Anda dan keluarga menikmati hidup yang nyaman dan berkualitas.
                         </p>
                     </div>
                     <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left">
@@ -162,7 +145,8 @@
                 </div>
 
             </div>
-        </section><!-- End About Us Section -->
+        </section>
+        <!-- End About Us Section -->
 
         <!-- ======= Video Section ======= -->
         <section id="video" class="video">
@@ -179,7 +163,8 @@
                 </div>
 
             </div>
-        </section><!-- End Cta Section -->
+        </section>
+        <!-- End Cta Section -->
 
         <!-- ======= Cta Section ======= -->
         <section id="cta" class="cta">
@@ -194,11 +179,8 @@
                 </div>
 
             </div>
-        </section><!-- End Cta Section -->
-
-        <!-- Start Blog Area -->
-
-        <!-- End Blog Area -->
+        </section>
+        <!-- End Cta Section -->
 
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
@@ -206,7 +188,6 @@
                 <div class="container">
                     <div class="section-title">
                         <h2>Galeri</h2>
-                        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
                     </div>
 
                     <div class="row">
