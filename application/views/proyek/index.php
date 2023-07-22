@@ -14,7 +14,7 @@
             <!-- DataTables -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <a href="<?php echo site_url('proyek/list_proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('rab/list_proyek') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 
                     <button onclick="download()" class="btn btn-info" style="float:right"><i class="fa fa-download"></i> Cetak Laporan</button>
                 </div>
@@ -24,7 +24,7 @@
                         <table class="table table-hover" id="" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>ID Pekerjaan</th>
+                                    <th>No.</th>
                                     <th>Nama Pekerjaan</th>
                                     <th>Volume</th>
                                     <th>Satuan</th>
@@ -34,12 +34,11 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php $i = 1; ?>
                                 <?php foreach ($rab1 as $dp) : ?>
 
                                     <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
+                                        <th scope="row"><?= $i; ?></th>
                                         <td width="">
                                             <?php echo $dp->nama_pekerjaan ?>
                                         </td>
@@ -59,6 +58,7 @@
 
 
                                     </tr>
+                                    <?php $i++; ?>
                                 <?php endforeach; ?>
                             </tbody>
                             <tfoot>
@@ -88,12 +88,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab2 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -113,6 +112,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -141,12 +141,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab3 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -166,6 +165,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -194,12 +194,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab4 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -219,6 +218,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -247,12 +247,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab5 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -272,6 +271,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -300,12 +300,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab6 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -325,6 +324,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -353,12 +353,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab7 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -378,6 +377,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -406,12 +406,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab8 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -431,6 +430,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -459,12 +459,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab9 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -484,6 +483,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -512,12 +512,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab10 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -537,6 +536,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -565,12 +565,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab11 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -590,6 +589,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -618,12 +618,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab12 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -643,6 +642,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -671,12 +671,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab13 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -696,6 +695,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -724,12 +724,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $i = 1; ?>
                                     <?php foreach ($rab14 as $dp) : ?>
 
                                         <tr>
-                                            <td>
-                                                <?php echo $dp->id_pekerjaan ?>
-                                            </td>
+                                            <th scope="row"><?= $i; ?></th>
                                             <td width="">
                                                 <?php echo $dp->nama_pekerjaan ?>
                                             </td>
@@ -749,6 +748,7 @@
 
 
                                         </tr>
+                                        <?php $i++; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
