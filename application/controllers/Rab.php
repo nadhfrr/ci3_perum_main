@@ -135,43 +135,53 @@ class Rab extends CI_Controller
 
         $objek = new PHPExcel();
         
-        $objek->getProperties()->setCreator("Web PAUD Sri Rejeki");
-        $objek->getProperties()->setLastModifiedBy("Web PAUD Sri Rejeki");
+        $objek->getProperties()->setCreator("Web De' Diamond Park");
+        $objek->getProperties()->setLastModifiedBy("Web De' Diamond Park");
 
-        $objek->getProperties()->setTitle("Laporan Pendaftaran");
+        $objek->getProperties()->setTitle("Laporan Rekap Pengeluaran RAB");
 
         $objek->setActiveSheetIndex(0);
+        $objek->getActiveSheet()->setCellValue('A1', 'Laporan Rekap Pengeluaran RAB');
+        $objek->getActiveSheet()->setCellValue('A3', 'NO');
+        $objek->getActiveSheet()->setCellValue('B3', 'NAMA PEKERJAAN');
+        $objek->getActiveSheet()->setCellValue('C3', 'VOLUME');
+        $objek->getActiveSheet()->setCellValue('D3', 'SATUAN');
+        $objek->getActiveSheet()->setCellValue('E3', 'HARGA SATUAN');
+        $objek->getActiveSheet()->setCellValue('F3', 'TOTAL');
+        // $objek->getActiveSheet()->setCellValue('G1', '');
+        // $objek->getActiveSheet()->setCellValue('H1', '');
+        // $objek->getActiveSheet()->setCellValue('I1', 'PERBAIKAN');
+        $objek->getActiveSheet()->getColumnDimension('A')->setWidth(5);
+        $objek->getActiveSheet()->getColumnDimension('B')->setWidth(24);
+        $objek->getActiveSheet()->getColumnDimension('C')->setWidth(8);
+        $objek->getActiveSheet()->getColumnDimension('D')->setWidth(8);
+        $objek->getActiveSheet()->getColumnDimension('E')->setWidth(14);
+        $objek->getActiveSheet()->getColumnDimension('F')->setWidth(15);
+        // $objek->getActiveSheet()->getColumnDimension('G')->setWidth(16);
+        // $objek->getActiveSheet()->getColumnDimension('H')->setWidth(15);
+        // $objek->getActiveSheet()->getColumnDimension('I')->setWidth(9);
+        // $objek->getActiveSheet()->getColumnDimension('J')->setWidth(27);
 
-        $objek->getActiveSheet()->setCellValue('A1', 'NO');
-        $objek->getActiveSheet()->setCellValue('B1', 'KD PROYEK');
-        $objek->getActiveSheet()->setCellValue('C1', 'ID RAB');
-        $objek->getActiveSheet()->setCellValue('D1', 'NAMA PEKERJAAN');
-        $objek->getActiveSheet()->setCellValue('E1', 'VOLUME');
-        $objek->getActiveSheet()->setCellValue('F1', 'SATUAN');
-        $objek->getActiveSheet()->setCellValue('G1', 'HARGA SATUAN');
-        $objek->getActiveSheet()->setCellValue('H1', 'TOTAL');
-        $objek->getActiveSheet()->setCellValue('I1', 'PERBAIKAN');
-
-        $baris = 2;
+        $baris = 4;
         $no = 1;
 
 
         foreach ($data as $a) {
             $objek->getActiveSheet()->setCellValue('A' . $baris, $no++);
-            $objek->getActiveSheet()->setCellValue('B' . $baris, $a->kd_proyek);
-            $objek->getActiveSheet()->setCellValue('C' . $baris, $a->id_rab);
-            $objek->getActiveSheet()->setCellValue('D' . $baris, $a->nama_pekerjaan);
-            $objek->getActiveSheet()->setCellValue('E' . $baris, $a->volume);
-            $objek->getActiveSheet()->setCellValue('F' . $baris, $a->satuan);
-            $objek->getActiveSheet()->setCellValue('G' . $baris, $a->harga_satuan);
-            $objek->getActiveSheet()->setCellValue('H' . $baris, $a->total);
-            $objek->getActiveSheet()->setCellValue('I' . $baris, $a->keterangan_perbaikan);
+            $objek->getActiveSheet()->setCellValue('B' . $baris, $a->nama_pekerjaan);
+            $objek->getActiveSheet()->setCellValue('C' . $baris, $a->volume);
+            $objek->getActiveSheet()->setCellValue('D' . $baris, $a->satuan);
+            $objek->getActiveSheet()->setCellValue('E' . $baris, $a->harga_satuan);
+            $objek->getActiveSheet()->setCellValue('F' . $baris, $a->total);
+            // $objek->getActiveSheet()->setCellValue('G' . $baris, $a->);
+            // $objek->getActiveSheet()->setCellValue('H' . $baris, $a->);
+            // $objek->getActiveSheet()->setCellValue('I' . $baris, $a->keterangan_perbaikan);
 
             $baris++;
         }
 
-        $filename = "Rekap Laporan Pendaftaran" . '.xlsx';
-        $objek->getActiveSheet()->setTitle("Laporan Pendaftaran");
+        $filename = "Laporan Rekap Pengeluaran RAB" . '.xlsx';
+        $objek->getActiveSheet()->setTitle("Laporan Rekap Pengeluaran RAB");
 
         header("Pragma: public");
         header("Expires: 0");
