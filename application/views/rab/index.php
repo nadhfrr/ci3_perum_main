@@ -19,6 +19,11 @@
                     <button onclick="download()" class="btn btn-info" style="float:right"><i class="fa fa-download"></i> Cetak Laporan</button>
                 </div>
                 <div class="card-body">
+                    <h3> Rencana Anggaran Biaya ( RAB )</h3>
+                    <h5><b> Proyek : <?= $proyek->pemilik_proyek ?></b> | <b> Lokasi : <?= $proyek->nama_proyek ?></b> | <b> Type : <?= $proyek->type ?></b></h5>
+                    <hr>
+                    <br>
+
                     <h5><b>I</b> Pekerjaan Pengukuran dan Pondasi</h5>
                     <div class="table-responsive">
                         <table class="table table-hover" id="" width="100%" cellspacing="0">
