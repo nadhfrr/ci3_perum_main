@@ -54,7 +54,7 @@ class Manpro extends CI_Controller
     {
         $data['title'] = 'Detail Daftar Pekerjaan RAB';
         $data["detailpekerjaan"] = $this->detailpekerjaan_model->getAll();
-        $data["detailrab"] = $this->detailrab_model->getById($id_pekerjaan);
+        // $data["detailrab"] = $this->detailrab_model->getById($id_pekerjaan);
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 

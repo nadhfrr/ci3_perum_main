@@ -9,6 +9,7 @@ class Detailpekerjaan extends CI_Controller
         parent::__construct();
         $this->load->model("detailpekerjaan_model");
         $this->load->model("detailrab_model");
+        $this->load->model('proyek_model');
         $this->load->library('form_validation');
     }
 
@@ -52,7 +53,7 @@ class Detailpekerjaan extends CI_Controller
         $data["detailpekerjaan"] = $this->detailpekerjaan_model->getAll();
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data["detailrab"] = $this->detailrab_model->getById($id_pekerjaan);
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
         // $proyek = $this->db->get('pekerjaan')->row_array();
 
