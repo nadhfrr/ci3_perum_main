@@ -28,6 +28,8 @@
 					<?php foreach ($pekerjaan as $pk) : ?>
 						<form action="<?php base_url("pekerjaan/edit") ?>" method="post" enctype="multipart/form-data">
 
+							<input type="hidden" name="id" value="<?php echo $pk['id'] ?>" />
+
 							<div class="form-group">
 								<label for="id_rab">Kode Bahan</label>
 								<input class="form-control <?php echo form_error('id_rab') ? 'is-invalid' : '' ?>" type="text" name="id_rab" value="<?php echo $pk['id_rab'] ?>" />

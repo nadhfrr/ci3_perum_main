@@ -4,19 +4,22 @@ class Pekerjaan_model extends CI_Model
 {
     private $_table = "proyek_detail";
 
-    public $id_pekerjaan;
-    public $kd_proyek;
+    public $id;
     public $id_rab;
     public $nama_pekerjaan;
     public $volume;
     public $satuan;
     public $harga_satuan;
-    public $jumlah_harga;
-    public $keterangan_perbaikan;
 
     public function rules()
     {
         return [
+            [
+                'field' => 'id',
+                'label' => 'id',
+                'rules' => 'required'
+            ],
+
             [
                 'field' => 'id_rab',
                 'label' => 'id_rab',
@@ -77,11 +80,11 @@ class Pekerjaan_model extends CI_Model
         $this->satuan = $post["satuan"];
         $this->harga_satuan = $post["harga_satuan"];
 
-        $this->db->update($this->_table, $this, array('kd_bahan' => $post['kd_bahan']));
+        $this->db->update($this->_table, $this, array('id' => $post['id']));
     }
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table, array("kd_bahan" => $id));
+        return $this->db->delete($this->_table, array("id" => $id));
     }
 }

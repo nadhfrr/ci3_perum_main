@@ -56,15 +56,15 @@ class Pekerjaan extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit($id_pekerjaan = null)
+    public function edit($id = null)
     {
-        if (!isset($id_pekerjaan)) redirect('pekerjaan');
+        if (!isset($id)) redirect('pekerjaan');
 
         $data['title'] = 'Edit Pekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $where = array('id_pekerjaan' => $id_pekerjaan);
-        $data['pekerjaan'] = $this->pekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
+        $where = array('id' => $id);
+        $data['pekerjaan'] = $this->pekerjaan_model->edit_data($where, 'proyek_detail')->result_array();
 
         $pekerjaan = $this->pekerjaan_model;
         $validation = $this->form_validation;
@@ -82,15 +82,15 @@ class Pekerjaan extends CI_Controller
         $this->load->view('pekerjaan/edit_form', $data);
         $this->load->view('templates/footer');
 
-        $data["pekerjaan"] = $pekerjaan->getById($id_pekerjaan);
+        $data["pekerjaan"] = $pekerjaan->getById($id);
         if (!$data["pekerjaan"]) show_404();
     }
 
-    public function delete($id_pekerjaan = null)
+    public function delete($id = null)
     {
-        if (!isset($id_pekerjaan)) show_404();
+        if (!isset($id)) show_404();
 
-        if ($this->pekerjaan_model->delete($id_pekerjaan)) {
+        if ($this->pekerjaan_model->delete($id)) {
             redirect(site_url('pekerjaan'));
         }
     }
