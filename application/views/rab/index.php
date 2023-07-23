@@ -804,8 +804,8 @@
                                 </tfoot>
                             </table>
 
-                            <a href="<?= base_url('rab/validasi/1/' . $proyek->kd_proyek); ?>" class="btn btn-success">Konfirmasi</a>
-                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#tolakValidasiModal">Perbaikan</a>
+                            <!-- <a href="<?= base_url('rab/validasi/1/' . $proyek->kd_proyek); ?>" class="btn btn-success">Konfirmasi</a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#tolakValidasiModal">Perbaikan</a> -->
 
                     </div>
                 </div>
