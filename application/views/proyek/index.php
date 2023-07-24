@@ -850,7 +850,7 @@
                                     </tfoot>
                                 </table>
 
-                                <a href="<?= base_url('rab/validasi/1/' . $proyek->kd_proyek); ?>" class="btn btn-success">Konfirmasi</a>
+                                <a href="<?= base_url('proyek/validasi/1/' . $proyek->kd_proyek); ?>" class="btn btn-success">Konfirmasi</a>
                                 <a href="" class="btn btn-danger" data-toggle="modal" data-target="#tolakValidasiModal">Perbaikan</a>
 
                         </div>
@@ -874,11 +874,11 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('rab/tolak_validasi/' . $proyek->kd_proyek . '') ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('proyek/tolak_validasi/2/' . $proyek->kd_proyek); ?>" method="post">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="ket_perbaikan">Catatan Perbaikan:</label>
-                        <textarea class="form-control" id="ket_perbaikan" name="ket_perbaikan" rows="2"></textarea>
+                        <textarea class="form-control <?php echo form_error('ket_perbaikan') ? 'is-invalid' : '' ?>" name="ket_perbaikan" rows="2" id="ket_perbaikan"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

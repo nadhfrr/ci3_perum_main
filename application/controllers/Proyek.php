@@ -227,6 +227,32 @@ class Proyek extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function validasi($statusvalidasi, $kd_proyek)
+    {
+        if ($statusvalidasi == 1) {
+            echo "Diterima";
+        } else {
+            echo "Ditolak";
+        }
+        $this->proyek_model->upstatusvalidasi($statusvalidasi, $kd_proyek);
+
+        redirect('proyek/list_proyek');
+    }
+
+    public function tolak_validasi($statusvalidasi, $kd_proyek)
+    {
+        $data = [
+            'ket_perbaikan' => $this->input->post('ket_perbaikan')
+        ];
+        // var_dump($data);
+        // die;
+        $this->db->where('kd_proyek', $kd_proyek);
+        $this->db->update('proyek', $data);
+
+        $this->proyek_model->upstatusvalidasi($statusvalidasi, $kd_proyek);
+        redirect('proyek/list_proyek');
+    }
+
     public function edit($kd_proyek = null)
     {
         if (!isset($kd_proyek)) redirect('proyek');
