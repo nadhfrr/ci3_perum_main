@@ -15,12 +15,6 @@ class Pekerjaan_model extends CI_Model
     {
         return [
             [
-                'field' => 'id',
-                'label' => 'id',
-                'rules' => 'required'
-            ],
-
-            [
                 'field' => 'id_rab',
                 'label' => 'id_rab',
                 'rules' => 'required'
