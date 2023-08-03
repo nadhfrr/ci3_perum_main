@@ -26,7 +26,7 @@
 					<form action="<?php base_url('pekerjaan/add') ?>" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="id_rab">ID RAB</label>
-							<input class="form-control <?php echo form_error('id_rab') ? 'is-invalid' : '' ?>" type="text" name="id_rab" placeholder="Kode Bahan" />
+							<input class="form-control <?php echo form_error('id_rab') ? 'is-invalid' : '' ?>" type="text" name="id_rab" placeholder="id rab" />
 							<div class="invalid-feedback">
 								<?php echo form_error('id_rab') ?>
 							</div>
@@ -34,7 +34,7 @@
 
 						<div class="form-group">
 							<label for="nama_pekerjaan">Nama Pekerjaan</label>
-							<input class="form-control <?php echo form_error('nama_pekerjaan') ? 'is-invalid' : '' ?>" type="text" name="nama_pekerjaan" min="0" placeholder="Uraian Bahan" />
+							<input class="form-control <?php echo form_error('nama_pekerjaan') ? 'is-invalid' : '' ?>" type="text" name="nama_pekerjaan" placeholder="Nama pekerjaan" />
 							<div class="invalid-feedback">
 								<?php echo form_error('nama_pekerjaan') ?>
 							</div>
@@ -42,7 +42,7 @@
 
 						<div class="form-group">
 							<label for="satuan">Satuan</label>
-							<input class="form-control <?php echo form_error('satuan') ? 'is-invalid' : '' ?>" type="text" name="satuan" min="0" placeholder="Satuan" />
+							<input class="form-control <?php echo form_error('satuan') ? 'is-invalid' : '' ?>" type="text" name="satuan" placeholder="Satuan" />
 							<div class="invalid-feedback">
 								<?php echo form_error('satuan') ?>
 							</div>
@@ -50,7 +50,7 @@
 
 						<div class="form-group">
 							<label for="harga_satuan">Harga Satuan</label>
-							<input class="form-control <?php echo form_error('harga_satuan') ? 'is-invalid' : '' ?>" type="text" name="harga_satuan" min="0" placeholder="Harga Dasar" />
+							<input class="form-control <?php echo form_error('harga_satuan') ? 'is-invalid' : '' ?>" type="text" name="harga_satuan" placeholder="Harga Dasar" />
 							<div class="invalid-feedback">
 								<?php echo form_error('harga_satuan') ?>
 							</div>

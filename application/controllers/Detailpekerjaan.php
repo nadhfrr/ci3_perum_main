@@ -80,6 +80,7 @@ class Detailpekerjaan extends CI_Controller
             redirect('detailpekerjaan');
         }
     }
+
     function tambah_catatan($id_pekerjaan)
     {
         $data = [
