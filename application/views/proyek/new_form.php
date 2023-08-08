@@ -24,13 +24,13 @@
 				<div class="card-body">
 
 					<form action="<?php base_url('proyek/add') ?>" method="post" enctype="multipart/form-data">
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="kd_proyek">Kode Proyek</label>
 							<input class="form-control <?php echo form_error('kd_proyek') ? 'is-invalid' : '' ?>" type="text" name="kd_proyek" placeholder="Kode Proyek" />
 							<div class="invalid-feedback">
 								<?php echo form_error('kd_proyek') ?>
 							</div>
-						</div>
+						</div> -->
 
 						<div class="form-group">
 							<label for="nama_proyek">Nama Proyek</label>

@@ -78,12 +78,15 @@
                                 </tr>
                             </tfoot>
                         </table>
-                        <h5><b>II</b> Pekerjaan Pasangan Bata</h5>
+                        <hr>
+
+                        <hr>
+                        <h5><b>II Pekerjaan Pasangan Bata</b></h5>
                         <table class="table table-hover" id="" width="100%" cellspacing="0">
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -132,11 +135,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>III</b> Pekerjaan Atap</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>III Pekerjaan Atap</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -185,11 +191,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>IV</b> Pekerjaan Rangka Plafon Hollow</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>IV Pekerjaan Rangka Plafon Hollow</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -238,11 +247,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>V</b> Pekerjaan Lantai 1 : 5</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>V Pekerjaan Lantai 1 : 5</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -291,11 +303,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>VI</b> Pekerjaan Pintu dan Jendela ( kusen )</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>VI Pekerjaan Pintu dan Jendela ( kusen )</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -344,11 +359,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>VII</b> Pekerjaan Pengecatan</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>VII Pekerjaan Pengecatan</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -397,11 +415,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>VIII</b> Pekerjaan Penutup Atap</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>VIII Pekerjaan Penutup Atap</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -450,11 +471,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>IX</b> Pekerjaan Beton 1 : 2 : 3</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>IX Pekerjaan Beton 1 : 2 : 3</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -503,11 +527,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>X</b> Pekerjaan Plesteran 1 : 2 : 10</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>X Pekerjaan Plesteran 1 : 2 : 10</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -556,11 +583,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>XI</b> Pekerjaan Sanitasi</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>XI Pekerjaan Sanitasi</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -609,11 +639,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>XII</b> Pekerjaan Alat Penggantung</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>XII Pekerjaan Alat Penggantung</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -662,11 +695,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>XIII</b> Pekerjaan Carport</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>XIII Pekerjaan Carport</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>
@@ -715,11 +751,14 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <h5><b>XIV</b> Ekektrikal</h5>
+                            <hr>
+
+                            <hr>
+                            <h5><b>XIV Ekektrikal</b></h5>
                             <table class="table table-hover" id="" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>ID Pekerjaan</th>
+                                        <th>No.</th>
                                         <th>Nama Pekerjaan</th>
                                         <th>Volume</th>
                                         <th>Satuan</th>

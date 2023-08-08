@@ -2,41 +2,41 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
-	<!-- Page Heading -->
-	<h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
-	<div class="row">
-		<div class="col-lg">
-			<?= form_error('proyek', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+    <div class="row">
+        <div class="col-lg">
+            <?= form_error('proyek', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
 
-			<?= $this->session->flashdata('message'); ?>
+            <?= $this->session->flashdata('message'); ?>
 
-			<?php if ($this->session->flashdata('success')) : ?>
-				<div class="alert alert-success" role="alert">
-					<?php echo $this->session->flashdata('success'); ?>
-				</div>
-			<?php endif; ?>
+            <?php if ($this->session->flashdata('success')) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?php echo $this->session->flashdata('success'); ?>
+                </div>
+            <?php endif; ?>
 
-			<!-- Card  -->
+            <!-- Card  -->
             <div class="card mb-3">
-                    <div class="card-header">
+                <div class="card-header">
 
-                        <a href="<?php echo site_url('proyek/list_proyek') ?>"><i class="fas fa-arrow-left"></i>
-                            Kembali</a>
-                    </div>
-                    <div class="card-body">
+                    <a href="<?php echo site_url('proyek/list_proyek') ?>"><i class="fas fa-arrow-left"></i>
+                        Kembali</a>
+                </div>
+                <div class="card-body">
 
-                        <?php foreach ($proyek as $proyek) : ?>
+                    <?php foreach ($proyek as $proyek) : ?>
                         <form action="<?php base_url("proyek/edit") ?>" method="post" enctype="multipart/form-data">
 
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="kd_proyek">Kode Proyek</label>
                                 <input class="form-control <?php echo form_error('kd_proyek') ? 'is-invalid' : '' ?>" type="text" name="kd_proyek" placeholder="Kode Proyek" value="<?php echo $proyek['kd_proyek'] ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('kd_proyek') ?>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label for="nama_proyek">Nama Proyek</label>
@@ -62,27 +62,19 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="keterangan_lain">Keterangan Lain</label>
-                                <input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" min="0" placeholder="Keterangan Lain" value="<?php echo $proyek['keterangan_lain'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('keterangan_lain') ?>
-                                </div>
-                            </div>
-
                             <input class="btn btn-primary btn-sml" type="submit" name="btn" value="Simpan" />
                         </form>
-                        <?php endforeach; ?>
-                    </div>
-
-                    <div class="card-footer small text-muted">
-                        *Wajib diisi
-                    </div>
-
-
+                    <?php endforeach; ?>
                 </div>
-		</div>
-	</div>
+
+                <div class="card-footer small text-muted">
+                    *Wajib diisi
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- /.container-fluid -->

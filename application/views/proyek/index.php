@@ -93,7 +93,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -149,7 +149,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -205,7 +205,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -261,7 +261,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -317,7 +317,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -373,7 +373,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -429,7 +429,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -485,7 +485,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -541,7 +541,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -597,7 +597,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -653,7 +653,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -709,7 +709,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>
@@ -765,7 +765,7 @@
                                 <table class="table table-hover" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>ID Pekerjaan</th>
+                                            <th>No.</th>
                                             <th>Nama Pekerjaan</th>
                                             <th>Volume</th>
                                             <th>Satuan</th>

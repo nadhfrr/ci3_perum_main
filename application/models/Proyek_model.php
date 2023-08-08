@@ -12,11 +12,6 @@ class Proyek_model extends CI_Model
     public function rules()
     {
         return [
-            [
-                'field' => 'kd_proyek',
-                'label' => 'kd_proyek',
-                'rules' => 'required'
-            ],
 
             [
                 'field' => 'nama_proyek',

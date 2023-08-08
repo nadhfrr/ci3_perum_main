@@ -30,13 +30,15 @@
                         <form action="<?php base_url("dataproyek/edit") ?>" method="post" enctype="multipart/form-data">
 
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="kd_proyek">Kode Proyek</label>
                                 <input class="form-control <?php echo form_error('kd_proyek') ? 'is-invalid' : '' ?>" type="text" name="kd_proyek" placeholder="Kode Proyek" value="<?php echo $proyek['kd_proyek'] ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('kd_proyek') ?>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <input type="hidden" name="kd_proyek" value="<?php echo $proyek['kd_proyek'] ?>" />
 
                             <div class="form-group">
                                 <label for="nama_proyek">Nama Proyek</label>
@@ -59,14 +61,6 @@
                                 <input class="form-control <?php echo form_error('pemilik_proyek') ? 'is-invalid' : '' ?>" type="text" name="pemilik_proyek" min="0" placeholder="Pemilik Proyek" value="<?php echo $proyek['pemilik_proyek'] ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('pemilik_proyek') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="keterangan_lain">Keterangan Lain</label>
-                                <input class="form-control <?php echo form_error('keterangan_lain') ? 'is-invalid' : '' ?>" type="text" name="keterangan_lain" min="0" placeholder="Keterangan Lain" value="<?php echo $proyek['keterangan_lain'] ?>" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('keterangan_lain') ?>
                                 </div>
                             </div>
 
