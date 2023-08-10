@@ -17,6 +17,18 @@
                     <a href="<?php echo site_url('laporan/pengeluaran') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
                 </div>
                 <div class="card-body">
+                    <h3> Rencana Anggaran Biaya ( RAB )</h3>
+                    <h6>
+                        <p><b>Proyek : <?= $proyek->nama_proyek ?></b></p>
+                    </h6>
+                    <h6>
+                        <p><b>Lokasi : Desa Slempit, Kec. Kedamean, Kab. Gresik</b></p>
+                    </h6>
+                    <h6>
+                        <p><b>Type : <?= $proyek->type ?></b></p>
+                    </h6>
+                    <hr>
+
                     <h5><b>I</b> Pekerjaan Pengukuran dan Pondasi</h5>
                     <div class="table-responsive">
                         <table class="table table-hover" id="" width="100%" cellspacing="0">

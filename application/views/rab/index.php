@@ -20,9 +20,16 @@
                 </div>
                 <div class="card-body">
                     <h3> Rencana Anggaran Biaya ( RAB )</h3>
-                    <h5><b> Proyek : <?= $proyek->pemilik_proyek ?></b> | <b> Lokasi : <?= $proyek->nama_proyek ?></b> | <b> Type : <?= $proyek->type ?></b></h5>
+                    <h6>
+                        <p><b>Proyek : <?= $proyek->nama_proyek ?></b></p>
+                    </h6>
+                    <h6>
+                        <p><b>Lokasi : Desa Slempit, Kec. Kedamean, Kab. Gresik</b></p>
+                    </h6>
+                    <h6>
+                        <p><b>Type : <?= $proyek->type ?></b></p>
+                    </h6>
                     <hr>
-                    <br>
 
                     <h5><b>I</b> Pekerjaan Pengukuran dan Pondasi</h5>
                     <div class="table-responsive">
