@@ -22,7 +22,7 @@
                         <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>ID Pekerjaan</th>
+                                    <th>No.</th>
                                     <th>Nama Pekerjaan</th>
                                     <th>Volume</th>
                                     <th>Satuan</th>
@@ -33,12 +33,11 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php $i = 1; ?>
                                 <?php foreach ($detailpekerjaan as $dp) : ?>
 
                                     <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
+                                        <th scope="row"><?= $i; ?></th>
                                         <td width="">
                                             <?php echo $dp->nama_pekerjaan ?>
                                         </td>
@@ -60,10 +59,11 @@
                                         </td>
 
                                         <td>
-                                            <a href="" class="btn btn-small text-primary" data-toggle="modal" data-target="#tolakValidasiModal<?php echo $dp->id_pekerjaan ?>"><i class="fas fa-edit"></i>Perbaikan</a>
-                                            <!-- <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp->kd_proyek . '/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Perbaikan</a> -->
+                                            <a href="<?php echo site_url('manpro/edit/' . $kd_proyek . '/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                            <a onclick="deleteConfirm('<?php echo site_url('manpro/delete/' . $dp->id_pekerjaan . '/' . $kd_proyek . '/' . $dp->id_rab) ?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus </a>
                                         </td>
                                     </tr>
+                                    <?php $i++; ?>
                                     <!-- Modal -->
                                     <div class="modal fade" id="tolakValidasiModal<?php echo $dp->id_pekerjaan ?>" tabindex="-1" aria-labelledby="tolakValidasiModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
